@@ -28,9 +28,7 @@ Feature :
 * K-Nearest Neighbors
 * Logistic Regression  
 
-### 🧠 Model Training: K-Nearest Neighbors (KNN)
-
-การสร้างโมเดล KNN และใช้เทคนิค **GridSearchCV** เพื่อค้นหาค่า Hyperparameter ที่เหมาะสมที่สุด (`n_neighbors`) โดยกำหนดค่า k ตั้งแต่ 3 ถึง 25
+ตัวอย่างโมเดล :
 
 ```python
 from sklearn.neighbors import KNeighborsClassifier
@@ -55,6 +53,7 @@ print("Best parameters : ", grid_search.best_params_)
 best_knn = grid_search.best_estimator_
 y_predict_train2 = best_knn.predict(X_train_scaled2)
 y_predict_test2 = best_knn.predict(X_test_scaled2)
+
 
 ## การประเมินผลโมเดล (Evaluation)
 * Accuracy
